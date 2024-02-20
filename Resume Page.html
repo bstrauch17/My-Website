@@ -4,11 +4,89 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your Name - Resume</title>
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Resetting some default styles and setting a background color */
+    body {
+      font-family: 'Verdana', sans-serif; /* Change the font here */
+      background-color: #f4f4f4;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Styling the header with a background color and text color */
+    header {
+      background-color: #3498db;
+      color: #fff;
+      padding: 1em;
+    }
+
+    /* Styling the navigation menu */
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav a {
+      /* Styling the navigation links with text color and bold font */
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    /* Adding padding to the main content area */
+    main {
+      padding: 20px;
+    }
+
+    /* Styling the Resume section */
+    #resume {
+      background-color: #ecf0f1;
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    /* Styling the download link */
+    #resume a {
+      display: block;
+      margin-top: 10px;
+      background-color: #3498db;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    /* Styling the resume image */
+    #resume img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 20px;
+    }
+
+    /* Styling the footer with a background color, text color, and fixed position */
+    footer {
+      background-color: #2c3e50;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
   <header>
     <nav>
+      <!-- Creating navigation links -->
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="About Page.html">About</a></li>
@@ -18,16 +96,20 @@
       </ul>
     </nav>
   </header>
+  <!-- Adding padding to the main content area -->
   <main>
     <section id="resume">
       <h2>My Resume</h2>
       <p>Below is my resume. You can download it by clicking the link below:</p>
+      <!-- Styling the download link -->
       <a href="C:\Users\Ben Strauch\Documents\Classes\Websie\Resume.pdf" download>Download Resume (PDF)</a>
-         <h3>Or, you can view it here:</h3>
-      <img src="C:\Users\Ben Strauch\Documents\Classes\Websie\Resume.jpg" alt="Your Resume" style="max-width: 100%; height: auto;">
+      <h3>Or, you can view it here:</h3>
+      <!-- Styling the resume image -->
+      <img src="C:\Users\Ben Strauch\Documents\Classes\Websie\Resume.jpg" alt="Your Resume">
     </section>
   </main>
   <footer>
+    <!-- Adding a copyright notice to the footer -->
     <p>&copy; 2023 Benjamin Strauch</p>
   </footer>
 </body>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Novel Rear Wing Geometry: Terps Racing</title>
+  <style>
+    /* Resetting some default styles and setting a background color */
+    body {
+      font-family: 'Verdana', sans-serif; /* You can change the font here */
+      background-color: #f4f4f4;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Styling the header with a background color and text color */
+    header {
+      background-color: #3498db;
+      color: #fff;
+      padding: 1em;
+    }
+
+    /* Styling the navigation menu */
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav a {
+      /* Styling the navigation links with text color and bold font */
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    /* Adding padding to the main content area */
+    main {
+      padding: 20px;
+	  display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center; /* Center-aligning text within sections
+    }
+
+    /* Styling the project section */
+    #project {
+      background-color: #ecf0f1;
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    /* Styling project images */
+    .project img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 20px;
+      border-radius: 5px;
+    }
+
+    /* Styling project image captions */
+    .caption {
+      margin-top: 10px;
+      text-align: center;
+      font-style: italic;
+      color: #555;
+    }
+
+    /* Styling the footer with a background color, text color, and fixed position */
+    footer {
+      background-color: #2c3e50;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <!-- Creating navigation links -->
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About Page.html">About</a></li>
+        <li><a href="Resume Page.html">Resume</a></li>
+        <li><a href="Portfolio Page.html">Portfolio</a></li>
+        <li><a href="Contact Page.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Adding padding to the main content area -->
+  <main>
+    <section id="Intro/Background">
+      <h2>Novel Rear Wing Geometry: Terps Racing</h2>
+		<div class="Background">
+		<h3> Background </h3>
+      <p>In this project, I researched, designed and simulated novel rear wing geometries in order to improve downforce and decrease drag with the help of senior members of the team. Based on URANS images of the 2023 Terps Racing car (TR23), we identiied airflow over the main rear wing element collided with it at an angle. This due to the air being directed over and around the roll hoop and driver's head. We sought to utilize this airflow in order to increase the wings efficiency. </p>
+	
+        <img src="C:\Users\Ben Strauch\Documents\Classes\Websie\TR folder\URANS justification.png" alt="slm photo" style="width: 40%">
+        <div class="caption">SLM printing process</div>
+		</div>
+	  
+	  <div class="Research">
+		<h3> Research and Design </h3>
+      <p>Imitation is the finest form of flattery. I started looking at other FSAE cars to see if any other competitors used a curved rear wing like the one that we had in mind. A few cars did use it, in varying positions due to various needs. The decision to not alter the current height of the main foil was made as we already know the air direction at that point. The new element was designed such that it curved upwards to meet the air coming off the roll hoop, to "smooth" out the airflow. </p>
+		   <img src="C:\Users\Ben Strauch\Documents\Classes\Websie\TR folder\wing element outline and shape.png" alt="Punto" style="width: 60%">
+        <div class="caption">Airfoil Profile and Shape</div>
+	 <p> </p>
+		  <img src="C:\Users\Ben Strauch\Documents\Classes\Websie\TR folder\wing iso.png" alt="Final Design" style="width: 50%; height: 50%;">
+        <div class="caption">Isometric View of Wing</div> 
+		  
+      </div>
+		      
+		 
+      <div class="Test">
+		  <h3> Simulation & Testing </h3>
+      <p>Utilizing STAR CCM+ for our CFD simulations, the new rear wing was implemented onto the car, and simulated at the average speed of 35 MPH.  </p>
+		  <img src="C:\Users\Ben Strauch\Documents\Classes\Websie\TR folder\car with element.png" alt="Test" style="width: 50%; height: 50%;">
+        <div class="caption">TR23 V0.3.34.2 Model</div>
+		  <p> Original analyses show a decrease in drag, but a correlating decrease in downforce. This was due to to the design not directing airflow to the secondary and tertiary elements, which is what the fundamental design of the wing depends on. The light blue areas indicate low pressure, which at the back of the car means drag. Further designs must recognize the airflow path, and incorporate things such as a flared trailing edge, altered angle of attack, or more. 
+		  </p> 
+		  <img src="C:\Users\Ben Strauch\Documents\Classes\Senior Year\Fall\ENME408\TR24 Full Car V0.3.34.2  Images\TR24 Full Car V0.3.34.2  Total Pressure XZ\frame00074.png" alt="Test" style="width: 50%; height: 50%;">
+        <div class="caption">TR 23 V0.3.34.2 CFD Sim</div>
+      </div>
+
+    
+
+    </section>
+  </main>
+  <footer>
+    <!-- Adding a copyright notice to the footer -->
+    <p>&copy; 2023 Benjamin Strauch</p>
+  </footer>
+</body>
+</html>
